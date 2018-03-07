@@ -6,5 +6,6 @@ target 'iMoney' do
   use_frameworks!
 
   # Pods for iMoney
+  pod "ILLoginKit"
 
 end

@@ -1,0 +1,29 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.25.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
+  - ILLoginKit (0.1.0):
+    - FBSDKLoginKit (= 4.18.0)
+    - Validator (~> 2.1.1)
+  - Validator (2.1.1)
+
+DEPENDENCIES:
+  - ILLoginKit
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 53e3f4bfb64e80c5f229dd30ae33ff57fbbbd2d1
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  ILLoginKit: ff473712662d92448553967d412ba201e61fbad0
+  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
+
+PODFILE CHECKSUM: c9208b03f20141a1c51370cd66e62a1c0403333a
+
+COCOAPODS: 1.4.0

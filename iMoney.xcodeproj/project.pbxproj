@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F8A87300F684F724CE7835 /* Pods_iMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F77137E177FE5B99C5F7FE7 /* Pods_iMoney.framework */; };
 		FF8266E1204E4F77006BC1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8266E0204E4F77006BC1F1 /* AppDelegate.swift */; };
 		FF8266E3204E4F77006BC1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8266E2204E4F77006BC1F1 /* ViewController.swift */; };
 		FF8266E6204E4F77006BC1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8266E4204E4F77006BC1F1 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4941ABE84299AC427977DFF4 /* Pods-iMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMoney/Pods-iMoney.release.xcconfig"; sourceTree = "<group>"; };
+		5A17200DD48A4E21F9CC5B13 /* Pods-iMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMoney/Pods-iMoney.debug.xcconfig"; sourceTree = "<group>"; };
+		9F77137E177FE5B99C5F7FE7 /* Pods_iMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8266DD204E4F77006BC1F1 /* iMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8266E0204E4F77006BC1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF8266E2204E4F77006BC1F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F8A87300F684F724CE7835 /* Pods_iMoney.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0177F0962793A5ADC55DCC49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A17200DD48A4E21F9CC5B13 /* Pods-iMoney.debug.xcconfig */,
+				4941ABE84299AC427977DFF4 /* Pods-iMoney.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECC249018B01A722000E8562 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F77137E177FE5B99C5F7FE7 /* Pods_iMoney.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF8266D4204E4F77006BC1F1 = {
 			isa = PBXGroup;
 			children = (
 				FF8266DF204E4F77006BC1F1 /* iMoney */,
 				FF8266DE204E4F77006BC1F1 /* Products */,
+				0177F0962793A5ADC55DCC49 /* Pods */,
+				ECC249018B01A722000E8562 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8266EF204E4F77006BC1F1 /* Build configuration list for PBXNativeTarget "iMoney" */;
 			buildPhases = (
+				DB2FD9EB7911F04186E76946 /* [CP] Check Pods Manifest.lock */,
 				FF8266D9204E4F77006BC1F1 /* Sources */,
 				FF8266DA204E4F77006BC1F1 /* Frameworks */,
 				FF8266DB204E4F77006BC1F1 /* Resources */,
+				86A3E9DDA3C6A65ECD17B4C1 /* [CP] Embed Pods Frameworks */,
+				E12D927090FB212A7229BE19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86A3E9DDA3C6A65ECD17B4C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iMoney/Pods-iMoney-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ILLoginKit/ILLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ILLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMoney/Pods-iMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB2FD9EB7911F04186E76946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12D927090FB212A7229BE19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMoney/Pods-iMoney-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF8266D9204E4F77006BC1F1 /* Sources */ = {
@@ -258,6 +347,7 @@
 		};
 		FF8266F0204E4F77006BC1F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A17200DD48A4E21F9CC5B13 /* Pods-iMoney.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iMoney/Info.plist;
@@ -270,6 +360,7 @@
 		};
 		FF8266F1204E4F77006BC1F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4941ABE84299AC427977DFF4 /* Pods-iMoney.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iMoney/Info.plist;
