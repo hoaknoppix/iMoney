@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		12F8A87300F684F724CE7835 /* Pods_iMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F77137E177FE5B99C5F7FE7 /* Pods_iMoney.framework */; };
+		FF7BEFEA20513D30006C76A9 /* FECreditLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BEFE920513D30006C76A9 /* FECreditLoginCoordinator.swift */; };
+		FF7BEFEC205165E7006C76A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF7BEFEB205165E7006C76A9 /* GoogleService-Info.plist */; };
+		FF7BEFEF20518C5A006C76A9 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7BEFEE20518C5A006C76A9 /* TransactionTableViewCell.swift */; };
 		FF8266E1204E4F77006BC1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8266E0204E4F77006BC1F1 /* AppDelegate.swift */; };
-		FF8266E3204E4F77006BC1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8266E2204E4F77006BC1F1 /* ViewController.swift */; };
+		FF8266E3204E4F77006BC1F1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8266E2204E4F77006BC1F1 /* TransactionViewController.swift */; };
 		FF8266E6204E4F77006BC1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8266E4204E4F77006BC1F1 /* Main.storyboard */; };
 		FF8266E8204E4F77006BC1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8266E7204E4F77006BC1F1 /* Assets.xcassets */; };
 		FF8266EB204E4F77006BC1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8266E9204E4F77006BC1F1 /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 		4941ABE84299AC427977DFF4 /* Pods-iMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMoney/Pods-iMoney.release.xcconfig"; sourceTree = "<group>"; };
 		5A17200DD48A4E21F9CC5B13 /* Pods-iMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMoney/Pods-iMoney.debug.xcconfig"; sourceTree = "<group>"; };
 		9F77137E177FE5B99C5F7FE7 /* Pods_iMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7BEFE920513D30006C76A9 /* FECreditLoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FECreditLoginCoordinator.swift; sourceTree = "<group>"; };
+		FF7BEFEB205165E7006C76A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF7BEFEE20518C5A006C76A9 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		FF8266DD204E4F77006BC1F1 /* iMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8266E0204E4F77006BC1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF8266E2204E4F77006BC1F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF8266E2204E4F77006BC1F1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		FF8266E5204E4F77006BC1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF8266E7204E4F77006BC1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF8266EA204E4F77006BC1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF7BEFE820513CE5006C76A9 /* LoginCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BEFE920513D30006C76A9 /* FECreditLoginCoordinator.swift */,
+			);
+			path = LoginCoordinator;
+			sourceTree = "<group>";
+		};
 		FF8266D4204E4F77006BC1F1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +92,13 @@
 		FF8266DF204E4F77006BC1F1 /* iMoney */ = {
 			isa = PBXGroup;
 			children = (
+				FF7BEFE820513CE5006C76A9 /* LoginCoordinator */,
 				FF8266E0204E4F77006BC1F1 /* AppDelegate.swift */,
-				FF8266E2204E4F77006BC1F1 /* ViewController.swift */,
+				FF8266E2204E4F77006BC1F1 /* TransactionViewController.swift */,
 				FF8266E4204E4F77006BC1F1 /* Main.storyboard */,
+				FF7BEFEE20518C5A006C76A9 /* TransactionTableViewCell.swift */,
 				FF8266E7204E4F77006BC1F1 /* Assets.xcassets */,
+				FF7BEFEB205165E7006C76A9 /* GoogleService-Info.plist */,
 				FF8266E9204E4F77006BC1F1 /* LaunchScreen.storyboard */,
 				FF8266EC204E4F77006BC1F1 /* Info.plist */,
 			);
@@ -151,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF8266EB204E4F77006BC1F1 /* LaunchScreen.storyboard in Resources */,
+				FF7BEFEC205165E7006C76A9 /* GoogleService-Info.plist in Resources */,
 				FF8266E8204E4F77006BC1F1 /* Assets.xcassets in Resources */,
 				FF8266E6204E4F77006BC1F1 /* Main.storyboard in Resources */,
 			);
@@ -169,16 +187,24 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ILLoginKit/ILLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ILLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -225,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8266E3204E4F77006BC1F1 /* ViewController.swift in Sources */,
+				FF8266E3204E4F77006BC1F1 /* TransactionViewController.swift in Sources */,
+				FF7BEFEA20513D30006C76A9 /* FECreditLoginCoordinator.swift in Sources */,
+				FF7BEFEF20518C5A006C76A9 /* TransactionTableViewCell.swift in Sources */,
 				FF8266E1204E4F77006BC1F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +418,7 @@
 				FF8266F1204E4F77006BC1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

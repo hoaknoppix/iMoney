@@ -6,6 +6,9 @@ target 'iMoney' do
   use_frameworks!
 
   # Pods for iMoney
-  pod "ILLoginKit"
+  pod 'ILLoginKit', '0.1.1'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end
