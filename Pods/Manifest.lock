@@ -55,6 +55,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - PKHUD (5.0.0)
   - Validator (2.1.1)
 
 DEPENDENCIES:
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - ILLoginKit (= 0.1.1)
+  - PKHUD
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -78,8 +80,9 @@ SPEC CHECKSUMS:
   ILLoginKit: e57d634ead1dac4c0085c235fdd6121f9c271285
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
-PODFILE CHECKSUM: 03a796334346f1382ed0e2763d8a5ca0fe3890a4
+PODFILE CHECKSUM: 98ece530faaffe60c5e5d55416e4bd0dcc84408c
 
 COCOAPODS: 1.4.0
